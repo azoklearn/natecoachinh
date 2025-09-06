@@ -137,14 +137,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Effet de parallaxe sur le hero
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
+// CORRECTION : Supprimer l'effet de parallaxe qui causait des problèmes
+// window.addEventListener('scroll', () => {
+//     const scrolled = window.pageYOffset;
+//     const hero = document.querySelector('.hero');
+//     if (hero) {
+//         hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+//     }
+// });
 
 // Gestion des modales pour les recettes (simulation)
 document.querySelectorAll('.recette-card .btn-outline').forEach(btn => {
@@ -287,5 +287,23 @@ const achievementsSection = document.querySelector('.achievements');
 if (achievementsSection) {
     counterObserver.observe(achievementsSection);
 }
+
+// CORRECTION : Assurer que toutes les sections sont visibles
+document.addEventListener('DOMContentLoaded', () => {
+    // Forcer la visibilité de toutes les sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.style.position = 'relative';
+        section.style.zIndex = '10';
+    });
+    
+    // Vérifier que la section présentation est visible
+    const presentationSection = document.getElementById('presentation');
+    if (presentationSection) {
+        presentationSection.style.display = 'block';
+        presentationSection.style.visibility = 'visible';
+        presentationSection.style.opacity = '1';
+    }
+});
 
 console.log('Site Nate Coaching chargé avec succès ! 💪');

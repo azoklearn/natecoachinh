@@ -110,7 +110,7 @@ body {
     transition: 0.3s;
 }
 
-/* Hero Section */
+/* Hero Section - CORRECTION DU PROBLÈME */
 .hero {
     min-height: 100vh;
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
@@ -119,6 +119,7 @@ body {
     padding-top: 80px;
     position: relative;
     overflow: hidden;
+    z-index: 1; /* Assure que la section hero reste au premier plan */
 }
 
 .hero::before {
@@ -251,6 +252,8 @@ body {
 /* Sections communes */
 section {
     padding: 5rem 0;
+    position: relative;
+    z-index: 2; /* Assure que toutes les sections sont visibles */
 }
 
 .section-title {
@@ -268,9 +271,12 @@ section {
     margin-bottom: 3rem;
 }
 
-/* Section Présentation */
+/* Section Présentation - CORRECTION DU PROBLÈME */
 .presentation {
     background: var(--dark-gray);
+    position: relative;
+    z-index: 2; /* Assure que cette section est visible */
+    margin-top: 0; /* Supprime tout espacement qui pourrait causer des problèmes */
 }
 
 .presentation-content {
@@ -361,6 +367,8 @@ section {
 /* Section Recettes */
 .recettes {
     background: var(--black);
+    position: relative;
+    z-index: 2;
 }
 
 .recettes-grid {
@@ -426,6 +434,8 @@ section {
 /* Section Transformations */
 .transformations {
     background: var(--dark-gray);
+    position: relative;
+    z-index: 2;
 }
 
 .transformations-grid {
@@ -507,6 +517,8 @@ section {
 /* Section Contact */
 .contact {
     background: var(--black);
+    position: relative;
+    z-index: 2;
 }
 
 .contact-content {
@@ -593,6 +605,8 @@ section {
     background: var(--black);
     padding: 3rem 0 1rem;
     border-top: 2px solid var(--primary-red);
+    position: relative;
+    z-index: 2;
 }
 
 .footer-content {
@@ -747,4 +761,14 @@ section {
 /* Scroll smooth */
 html {
     scroll-behavior: smooth;
+}
+
+/* CORRECTION SPÉCIFIQUE : Assurer que toutes les sections sont visibles */
+#presentation,
+#recettes,
+#transformations,
+#contact {
+    position: relative;
+    z-index: 10;
+    background-attachment: scroll;
 }
