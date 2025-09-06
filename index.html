@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate Coaching - Coach Sportif Professionnel à Nancy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NATE<span class="accent">COACHING</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#presentation" class="nav-link">Présentation</a></li>
+                <li><a href="#recettes" class="nav-link">Recettes</a></li>
+                <li><a href="#transformations" class="nav-link">Transformations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Transformez votre corps avec <span class="accent">NATE</span></h1>
+                <p class="hero-subtitle">Coach sportif professionnel à Nancy • Sponsorisé par Prozis</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Prendre RDV</a>
+                    <a href="https://instagram.com/nate__coaching" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
+                <div class="sponsor-code">
+                    <p>Code sponsor Prozis : <span class="code">HEPAISS10</span></p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section id="presentation" class="presentation">
+        <div class="container">
+            <h2 class="section-title">À propos de Nate</h2>
+            <div class="presentation-content">
+                <div class="presentation-text">
+                    <h3>Coach Sportif Professionnel à Nancy</h3>
+                    <p>Passionné de fitness depuis plus de 8 ans, Nate vous accompagne dans votre transformation physique avec une approche personnalisée et motivante. Basé à Nancy, il combine expertise technique et motivation pour vous faire atteindre vos objectifs.</p>
+                    
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>8+ années d'expérience</h4>
+                                <p>Expertise reconnue dans le coaching sportif</p>
+                            </div>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>200+ clients transformés</h4>
+                                <p>Résultats concrets et durables</p>
+                            </div>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-medal"></i>
+                            <div>
+                                <h4>Sponsorisé Prozis</h4>
+                                <p>Partenariat avec la marque leader du fitness</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sponsor-section">
+                        <h4>Code Sponsor Prozis</h4>
+                        <div class="code-display">
+                            <span class="code">HEPAISS10</span>
+                            <button class="copy-btn" onclick="copyCode()">Copier</button>
+                        </div>
+                        <p>Utilisez ce code pour bénéficier de réductions sur tous vos achats Prozis</p>
+                    </div>
+                </div>
+                <div class="presentation-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Recettes -->
+    <section id="recettes" class="recettes">
+        <div class="container">
+            <h2 class="section-title">Recettes Fitness</h2>
+            <p class="section-subtitle">Découvrez mes recettes préférées pour optimiser vos performances</p>
+            
+            <div class="recettes-grid">
+                <div class="recette-card">
+                    <div class="recette-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="recette-content">
+                        <h3>Shake Protéiné Post-Workout</h3>
+                        <p>Récupération optimale après l'entraînement</p>
+                        <div class="recette-details">
+                            <span class="time"><i class="fas fa-clock"></i> 5 min</span>
+                            <span class="difficulty"><i class="fas fa-star"></i> Facile</span>
+                        </div>
+                        <button class="btn btn-outline">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="recette-card">
+                    <div class="recette-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="recette-content">
+                        <h3>Bowl Protéiné</h3>
+                        <p>Repas équilibré et riche en protéines</p>
+                        <div class="recette-details">
+                            <span class="time"><i class="fas fa-clock"></i> 15 min</span>
+                            <span class="difficulty"><i class="fas fa-star"></i> Moyen</span>
+                        </div>
+                        <button class="btn btn-outline">Voir la recette</button>
+                    </div>
+                </div>
+
+                <div class="recette-card">
+                    <div class="recette-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="recette-content">
+                        <h3>En-cas Pré-Entraînement</h3>
+                        <p>Énergie optimale pour vos séances</p>
+                        <div class="recette-details">
+                            <span class="time"><i class="fas fa-clock"></i> 10 min</span>
+                            <span class="difficulty"><i class="fas fa-star"></i> Facile</span>
+                        </div>
+                        <button class="btn btn-outline">Voir la recette</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Transformations -->
+    <section id="transformations" class="transformations">
+        <div class="container">
+            <h2 class="section-title">Transformations Réussies</h2>
+            <p class="section-subtitle">Découvrez les résultats concrets de mes clients</p>
+            
+            <div class="transformations-grid">
+                <div class="transformation-card">
+                    <div class="before-after">
+                        <div class="before">
+                            <h4>AVANT</h4>
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="after">
+                            <h4>APRÈS</h4>
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transformation-info">
+                        <h3>Marc - 6 mois</h3>
+                        <p>-12kg • +8kg de muscle</p>
+                        <div class="testimonial">
+                            <p>"Nate m'a transformé complètement. Sa méthode fonctionne !"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transformation-card">
+                    <div class="before-after">
+                        <div class="before">
+                            <h4>AVANT</h4>
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="after">
+                            <h4>APRÈS</h4>
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transformation-info">
+                        <h3>Sarah - 4 mois</h3>
+                        <p>-8kg • Tonification complète</p>
+                        <div class="testimonial">
+                            <p>"Je me sens plus forte et confiante que jamais !"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transformation-card">
+                    <div class="before-after">
+                        <div class="before">
+                            <h4>AVANT</h4>
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="after">
+                            <h4>APRÈS</h4>
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transformation-info">
+                        <h3>Thomas - 8 mois</h3>
+                        <p>-15kg • Prise de masse</p>
+                        <div class="testimonial">
+                            <p>"Un coach exceptionnel qui m'a fait dépasser mes limites !"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact/RDV -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Prenez Rendez-vous</h2>
+            <p class="section-subtitle">Réservez votre séance de coaching personnalisée</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations de Contact</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Nancy, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@nate__coaching</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-gift"></i>
+                        <div>
+                            <h4>Code Sponsor</h4>
+                            <p>HEPAISS10 (Prozis)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rdv-form">
+                    <h3>Réserver un RDV</h3>
+                    <form id="rdvForm">
+                        <div class="form-group">
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telephone" name="telephone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <select id="type" name="type" required>
+                                <option value="">Type de coaching</option>
+                                <option value="musculation">Musculation</option>
+                                <option value="perte-poids">Perte de poids</option>
+                                <option value="prise-masse">Prise de masse</option>
+                                <option value="remise-forme">Remise en forme</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Vos objectifs et disponibilités" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nate Coaching</h3>
+                    <p>Coach sportif professionnel à Nancy</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/nate__coaching" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Coaching personnalisé</li>
+                        <li>Programmes nutritionnels</li>
+                        <li>Suivi à distance</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Partenaire</h4>
+                    <p>Sponsorisé par <strong>Prozis</strong></p>
+                    <p>Code : <strong>HEPAISS10</strong></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nate Coaching. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
